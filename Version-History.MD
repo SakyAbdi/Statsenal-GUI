@@ -1,6 +1,10 @@
 # Version History:
 This document outlines the Version History for Statsenal, detailing the various changes and improvements that have been made.
 
+## Version 0.1.1 (Release Date: 3/31/2024):
+**Patches**:
+- Implemented an automatic closure for the occasional ad banner that appears that was preventing uninterrupted user interaction.
+
 ## Version 0.1.0 (Release Date: 3/22/2024):
 
 **Update**:
