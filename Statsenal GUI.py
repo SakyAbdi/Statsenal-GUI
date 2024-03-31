@@ -46,8 +46,14 @@ def club_picker(club_choice, stat_choice, season_choice):
         cookies_button.click()
     else:
         pass
-    time.sleep(1)
+    try:
+        ad_button = driver.find_element(By.LINK_TEXT, 'Close Advert')
     
+        if ad_button == driver.find_element(By.LINK_TEXT, 'Close Advert'):
+            ad_button.click()
+            time.sleep(1)
+    except:
+        pass    
     hidden_element = driver.find_element(By.CLASS_NAME, 'label')
     driver.execute_script("arguments[0].click();", hidden_element)
     time.sleep(1)
